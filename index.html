@@ -202,7 +202,7 @@
       background-position: center;
       opacity: 0;
       transform: scale(1.1);
-      /* transition: opacity 1s, transform 6s; */
+      transition: opacity 1s, transform 6s;
     }
 
     .slide.active {
@@ -386,7 +386,7 @@ Semoga apa pun yang kamu minta hari ini benar-benar dikabulin, dan aku tetap jad
         slides.forEach(slide => slide.classList.remove("active"));
         slides[index].classList.add("active");
 
-      }, 200);
+      }, 800);
     }
 
 
@@ -438,3 +438,4 @@ Semoga apa pun yang kamu minta hari ini benar-benar dikabulin, dan aku tetap jad
 </body>
 
 </html>
+
