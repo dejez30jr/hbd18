@@ -202,7 +202,7 @@
       background-position: center;
       opacity: 0;
       transform: scale(1.1);
-      transition: opacity 1s, transform 6s;
+      /* transition: opacity 1s, transform 6s; */
     }
 
     .slide.active {
@@ -217,6 +217,9 @@
       transform: translateX(-50%);
       color: #fff;
       text-align: center;
+      background-color: #7a0b0b;
+      padding: 15px;
+      border-radius: 30px;
       z-index: 5;
       text-shadow: 0 5px 20px rgba(0, 0, 0, .6);
     }
@@ -258,6 +261,11 @@
       </div>
     </div>
     <button class="blowCandle" id="blowCandle">blow the candles 💨</button>
+    <div style="padding: 10px;">
+      <p style="padding: 10px; text-align: center; background-color: white;">Happy birthday sayang yang ke 18 tahun 💗
+Sebelum kamu klik dan tiup lilinnya, coba pejamkan mata sebentar… terus berdoa dalam hati apa yang kamu pengen? ✨
+Semoga apa pun yang kamu minta hari ini benar-benar dikabulin, dan aku tetap jadi orang yang ada di samping kamu. 🤍</p>
+    </div>
   </section>
 
   <!-- ===== SLIDESHOW ===== -->
@@ -277,10 +285,28 @@
       style="background-image:url('WhatsApp\ Image\ 2026-02-17\ at\ 00.52.07.jpeg')">
     </div>
     <div class="slide" 
+      style="background-image:url('WhatsApp\ Image\ 2026-02-17\ at\ 13.45.33.jpeg')">
+    </div>
+    <div class="slide" 
+      style="background-image:url('WhatsApp\ Image\ 2026-02-17\ at\ 13.45.33\ \(1\).jpeg')">
+    </div>
+    <div class="slide" 
+      style="background-image:url('WhatsApp\ Image\ 2026-02-17\ at\ 13.45.34.jpeg')">
+    </div>
+    <div class="slide" 
       style="background-image:url('WhatsApp\ Image\ 2026-02-17\ at\ 00.52.07\ \(1\).jpeg')">
     </div>
     <div class="slide" 
-      style="background-image:url('WhatsApp\ Image\ 2026-02-17\ at\ 00.17.04\ \(1\).jpeg')">
+      style="background-image:url('IMG_20251213_150212.jpg.jpeg')">
+    </div>
+    <div class="slide" 
+      style="background-image:url('IMG_20251213_164129.jpg.jpeg')">
+    </div>
+    <div class="slide" 
+      style="background-image:url('IMG_20251224_232632.jpg.jpeg')">
+    </div>
+    <div class="slide" 
+      style="background-image:url('IMG-20251221-WA0094.jpg.jpeg')">
     </div>
 
     <div class="overlay-text">
@@ -352,7 +378,7 @@
             document.body.classList.remove("open");
             document.body.classList.remove("show-slideshow");
             restartBtn.style.display = "block";
-          }, 4000);
+          }, 2000);
 
           return;
         }
@@ -360,7 +386,7 @@
         slides.forEach(slide => slide.classList.remove("active"));
         slides[index].classList.add("active");
 
-      }, 4000);
+      }, 200);
     }
 
 
